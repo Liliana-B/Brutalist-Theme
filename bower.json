@@ -1,0 +1,24 @@
+{
+  "name": "liliana-blog",
+  "description": "",
+  "main": "index.html",
+  "authors": [
+    "Liliana Brissos <liliana@lilianab.com>"
+  ],
+  "license": "ISC",
+  "homepage": "https://lilianabrissos.com/blog",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.1.1",
+    "bootstrap-sass": "^3.3.7",
+    "animate-sass": "^0.6.6",
+    "components-font-awesome": "^4.7.0",
+    "wow": "wowjs#^1.1.2"
+  }
+}

@@ -1,0 +1,27 @@
+.single-post {
+    span.meta {
+    
+            font-family: 'Lora', sans-serif;
+            padding-left: 5px;
+            display: inline-block;
+            margin-bottom: 6px;
+            font-size: 14px;
+            font-style: italic;
+            font-weight: 700;
+            color: #BDBDBD;
+            line-height: 1.2;
+            letter-spacing: .35px;
+    }
+
+    .jumbotron {
+        margin-bottom: 0;
+    }
+
+    .hero-image {
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: $black;
+    }
+}

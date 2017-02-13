@@ -1,0 +1,26 @@
+footer {
+	background-color: $blue;
+	color: #ffffff;
+	text-align: center;
+	margin-top: 40px;
+	
+	p {
+		margin: 0;
+		padding: 40px 0;
+	}
+
+	a {
+		transition: all 0.5s linear 0s;
+
+	}
+
+	a.author {
+		color: #ffffff;
+		border-bottom: 2px solid #ffffff;
+	}
+	a.author:hover::after {
+		content: "- Hire me!";
+		padding-left: 5px;
+		transition: all 0.5s linear 0s;
+	}
+}

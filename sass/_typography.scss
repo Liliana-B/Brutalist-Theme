@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css?family=Cabin:400,700|Lora:400,400i');
+
+html,
+body {
+	font-family: 'Cabin', sans-serif;
+	font-size: 16px;
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+
+a, 
+a:hover, 
+a:focus, 
+a:visited, 
+a:active {
+	color: $blue;
+	font-weight: 700;
+	text-decoration: none;
+}
+
+a:hover, 
+a:focus,  
+a:active {
+	border-bottom: 3px solid $blue;
+}
+
+h1, 
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: 'Lora', serif;
+	font-weight: 400;
+	color:  $brand-color-primary;
+}
+
+::selection {
+  background: $yellow;
+}
+::-moz-selection {
+  background:  $yellow;
+}
+
+a, .btn, button {
+    outline: none;
+    border-radius: 0;
+    transition: all 300ms linear 0s;
+}
+
+a:before, a:after {
+    transition: all 300ms linear 0s;
+}
+
+a.drop-border {
+	color: #ffffff;
+	font-size: 14px;
+	letter-spacing: 1px;
+	margin: 15px 0;
+}
+
+.drop-border {	
+	display: inline-block;
+	position: relative;
+	color: #ffffff;
+	text-transform: uppercase;
+	span{
+		background: $blue;
+		padding: 10px 20px;
+		display: block;
+		z-index: 2;
+		position: relative;
+		&:before{
+			content: '';
+			display: block;
+			width: 0;
+			height: 0;
+			position: absolute;
+			top: 50%;
+			left: 50%;
+			border-radius: 100%;
+			transition: all 300ms linear 0s;
+			transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+		}
+	}
+	&:before{
+		content: '';
+		display: block;
+		border: 2px solid $blue;
+		position: absolute;
+		top: 5px;
+		left: 5px;
+		right: -5px;
+		bottom: -5px;
+	}
+	&:hover,&:focus{
+		span{
+			background: #ffffff;
+			color: $blue;
+		}
+		&:before{
+			border-color: $yellow;
+			left: -5px;
+			top: -5px;
+			right: 5px;
+			bottom: 5px;
+		}
+	}
+	&:focus{
+		span{
+			&:before{
+				background: transparentize(#fff,0.8);
+				width: 100%;
+				height: 100%;
+				left: 0;
+				top: 0;
+				border-radius: 0;
+			}
+		}
+	}
+}

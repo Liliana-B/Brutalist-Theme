@@ -1,0 +1,6 @@
+.phpintel
+.sass-cache
+bower_components
+cgi-bin
+node_modules
+wordpress/wp-config.php
